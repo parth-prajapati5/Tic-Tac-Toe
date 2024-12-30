@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: rgb(2,0,36);
+    background: linear-gradient(45deg, #68b6f3, #e07ecb, #efb58f, #86a8e7);
+    background-size: 200% 200%;
+    animation: gradientAnimation 6s infinite ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+  color: white;
+}
+.container{
+   text-align: center;
+}
+.grid{
+   display:grid;
+   grid-template-columns: repeat(3,100px);   /* three column having 100px width */
+   grid-gap: 10px; /* both include row-gap:10px or column-gap:10px */
+   margin-top: 40px;
+}
+#btn{
+  width: 100px;
+  height: 100px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 35px;
+  font-weight: 500;
+  color: #bb2b9c;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background: white;
+}
+#btn:hover{
+  background-color: rgb(215, 213, 213);
+}
+@keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+p{
+  margin: 20px;
+  font-size: 45px;
+  color: black;
+}
+.playagain{
+  margin-top: 10px;
+  padding: 10px 30px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+background-color:black;
+color: white;
+cursor: pointer;
+border-radius:10px ;
+}
+.playagain:hover{
+  background-color: #fff;
+  color: black;
+}
